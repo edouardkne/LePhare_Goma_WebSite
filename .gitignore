@@ -1,0 +1,44 @@
+
+# Local by Flywheel
+/conf/
+/logs/
+
+# WordPress core
+/app/public/wp-admin/
+/app/public/wp-includes/
+/app/public/wp-*.php
+/app/public/index.php
+/app/public/xmlrpc.php
+/app/public/license.txt
+/app/public/readme.html
+/app/public/.htaccess
+
+# Sensitive configuration
+/app/public/wp-config.php
+/app/public/wp-config-*.php
+.env
+.env.*
+!.env.example
+
+# Generated content and backups
+/app/public/wp-content/uploads/
+/app/public/wp-content/cache/
+/app/public/wp-content/upgrade/
+/app/public/wp-content/backup*/
+/app/public/wp-content/ai1wm-backups/
+
+# Development files
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+*.sql
+*.sql.gz
+*.zip
+# Exclure les thèmes WordPress tiers
+/app/public/wp-content/themes/*
+!/app/public/wp-content/themes/grace-seminary/
+
+# Configuration spécifique à Local
+/app/.envrc
+/app/public/local-xdebuginfo.php
